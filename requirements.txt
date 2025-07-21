@@ -14,9 +14,9 @@ langchain-google-genai
 google-generativeai
 
 # Hugging Face Integration
-langchain-huggingface
+langchain_huggingface
 transformers
-huggingface-hub
+huggingface_hub
 
 # Environment Variable Management
 python-dotenv
