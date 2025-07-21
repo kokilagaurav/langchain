@@ -2,10 +2,12 @@ from langchain_openai import OpenAIEmbeddings
 from dotenv import load_dotenv
 import os
 
-embedding = OpenAIEmbeddings.load_dotenv(
-    model= "text-embedding-3-large", dimension=40
+load_dotenv()
+
+embedding = OpenAIEmbeddings(
+    model= "text-embedding-3-large", dimensions=40
 )
 
-result = embedding.query("capital of india is delhi")
+result = embedding.embed_query("capital of india is delhi")
 
 print(str(result))
